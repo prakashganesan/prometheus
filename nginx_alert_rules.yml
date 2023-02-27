@@ -1,0 +1,11 @@
+groups:
+ - name: nginx_node_group
+   rules:
+   - alert: Nginx Down
+     expr: nginx_up == 0
+     for: 1m
+     labels:
+        severity: critical
+     annotations:
+        summary: host is down (instance {{ $labels.instance }})
+        description: "host is down on {{ $labels.instance }}\n  VALUE = {{ $value }}\n  LABELS = {{ $labels }}"
