@@ -1,13 +1,13 @@
-## Prometheus Setup 
+# Prometheus Setup 
 Prometheus, a [Cloud Native Computing Foundation](https://cncf.io/) project, is a systems and service monitoring system. It collects metrics
 from configured targets at given intervals, evaluates rule expressions,
 displays the results, and can trigger alerts when specified conditions are observed.
 
-# Architecture overview
+## Architecture overview
 
 ![Architecture overview](https://cdn.jsdelivr.net/gh/prometheus/prometheus@c34257d069c630685da35bcef084632ffd5d6209/documentation/images/architecture.svg)
 
-# Config file info
+## Config file info
 
 We going to setup Prometheus, Alert Manager and Nginx in our example
 
@@ -19,48 +19,58 @@ We going to setup Prometheus, Alert Manager and Nginx in our example
 **Docker Compose Install in Ubuntu**
 Ref: https://docs.docker.com/engine/install/ubuntu/#set-up-the-repository
 
-### Prometheus up and running
+## Prometheus up and running
 
-* Command to start the docker compose
+#### Step-1: Command to start the docker compose
 
 ![Docker Compose up](./images/Docker-Compose-Up.PNG)
 
-* Prometheus status 
+
+#### Step-2: Prometheus status 
 
 ![Prometheus](./images/Prometheus-up.PNG)
 
-* Targets configured in Prometheus
+
+#### Step-3: Targets configured in Prometheus
 
 ![Prometheus-targets](./images/Prometheus-targets.PNG)
 
-* Nginx alert config info
+
+#### Step-4: Nginx alert config info
 
 ![Nginx-alert](./images/nginx-alert.PNG)
 
-* Nginx alert rules info
+
+#### Step-5: Nginx alert rules info
 
 ![Nginx-alert-rules](./images/nginx-alert-rules.PNG)
 
-* Available nginx plugins to pull the metrics from the nginx
+
+#### Step-6: Available nginx plugins to pull the metrics from the nginx
 
 ![Nginx-metrics](./images/nginx-metrics.PNG)
 
-* Let's stop the nginx container and will check the alert status
+
+#### Step-7: Let's stop the nginx container and will check the alert status
 
 ![Nginx-container-stop](./images/nginx-container-shutdown.PNG)
 
-* Once container goes down alerts become pending state and will wait for the container state for 1m before triggering the alert
+
+#### Step-8: Once container goes down alerts become pending state and will wait for the container state for 1m before triggering the alert
 
 ![Nginx-alert-pending](./images/nginx-container-alert-waiting-for-the-nginx-container-status.PNG)
 
-* Once the alert reaches 1m and if container is not become active then alert will get started to trigger
+
+#### Step-9: Once the alert reaches 1m and if container is not become active then alert will get started to trigger
 
 ![Nginx-alert](./images/nginx-container-alert-after-waiting-1m-alert-triggered.PNG)
 
-* Let's start the nginx container will check the alert status 
+
+#### Step-10: Let's start the nginx container will check the alert status 
 
 ![Nginx-container-start](./images/nginx-container-start.PNG)
 
-* Once container become active alert will get recovered
+
+#### Step-11: Once container become active alert will get recovered
 
 ![Nginx-alert-recovery](./images/nginx-alert-recovered.PNG)
