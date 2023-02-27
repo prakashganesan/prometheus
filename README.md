@@ -1,4 +1,4 @@
-### Prometheus Setup 
+# Prometheus Setup 
 Prometheus, a [Cloud Native Computing Foundation](https://cncf.io/) project, is a systems and service monitoring system. It collects metrics
 from configured targets at given intervals, evaluates rule expressions,
 displays the results, and can trigger alerts when specified conditions are observed.
@@ -23,7 +23,7 @@ Ref: https://docs.docker.com/engine/install/ubuntu/#set-up-the-repository
 
 #### Command to start the docker compose
 
-![Docker Compose up](./images/Docker-Compose-Up.PNG)
+```![Docker Compose up](./images/Docker-Compose-Up.PNG)```
 
 #### Prometheus status 
 
