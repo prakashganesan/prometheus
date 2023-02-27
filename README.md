@@ -28,3 +28,37 @@ We going to setup Prometheus, Alert Manager and Nginx in our example
 # Docker Compose up
 
 ![Docker Compose up](./images/Docker-Compose-Up.PNG)
+
+# Prometheus configuration
+
+![Prometheus](./images/Prometheus-up.PNG)
+
+![Prometheus-targets](./images/Prometheus-targets.PNG)
+
+![Nginx-Alert](./images/nginx-alert.PNG)
+
+![Nginx-Alert-Rules](./images/nginx-alert-rules.PNG)
+
+![Nginx-metrics](./images/nginx-metrics.PNG)
+
+Let's stop the nginx container and will check the alert status
+
+![Nginx-container-stop](./images/nginx-container-shutdown.PNG)
+
+Once container goes down alerts become pending state and will wait for the container state for 1m before triggering the alert
+
+![Nginx-alert-pending](./images/nginx-container-alert-waiting-for-the-nginx-container-status.PNG)
+
+Once the alert reaches 1m and if container is not become active then alert will get started to trigger
+
+![Nginx-alert](./images/nginx-container-alert-after-waiting-1m-alert-triggered.PNG)
+
+Let's start the nginx container will check the alert status 
+
+![Nginx-container-start](./images/nginx-container-start.PNG)
+
+Once container become active alert will get recovered
+
+![Nginx-alert-recovery](./images/nginx-alert-recovered.PNG)
+
+
