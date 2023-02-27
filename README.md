@@ -7,7 +7,7 @@ displays the results, and can trigger alerts when specified conditions are obser
 
 ![Architecture overview](https://cdn.jsdelivr.net/gh/prometheus/prometheus@c34257d069c630685da35bcef084632ffd5d6209/documentation/images/architecture.svg)
 
-## Install
+# Config file info
 
 We going to setup Prometheus, Alert Manager and Nginx in our example
 
@@ -16,20 +16,15 @@ We going to setup Prometheus, Alert Manager and Nginx in our example
 * ```nginx.conf``` configuration file configured with ```stub_status``` to provide the metrics to ```nginx node exporter```
 * ```nginx_alert_rules.yml``` configuration file has the alert rules to trigger when nginx container goes down.
 
-## How to run docker compose file
-
-# Setup Docker in local machine 
-
-![Docker Compose Install in Ubuntu](https://docs.docker.com/engine/install/ubuntu/#set-up-the-repository)
+**Docker Compose Install in Ubuntu**
+Ref: https://docs.docker.com/engine/install/ubuntu/#set-up-the-repository
 
     To start services in docker compose file ```sudo docker compose up```
     To stop services in docker compose file ```sudo docker compose down```
 
-# Docker Compose up
+# Prometheus up and running
 
 ![Docker Compose up](./images/Docker-Compose-Up.PNG)
-
-# Prometheus configuration
 
 ![Prometheus](./images/Prometheus-up.PNG)
 
