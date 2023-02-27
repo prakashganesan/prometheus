@@ -1,13 +1,13 @@
-## Prometheus Setup 
+### Prometheus Setup 
 Prometheus, a [Cloud Native Computing Foundation](https://cncf.io/) project, is a systems and service monitoring system. It collects metrics
 from configured targets at given intervals, evaluates rule expressions,
 displays the results, and can trigger alerts when specified conditions are observed.
 
-### Architecture overview
+## Architecture overview
 
 ![Architecture overview](https://cdn.jsdelivr.net/gh/prometheus/prometheus@c34257d069c630685da35bcef084632ffd5d6209/documentation/images/architecture.svg)
 
-### Config file info
+## Config file info
 
 We going to setup Prometheus, Alert Manager and Nginx in our example
 
@@ -19,9 +19,9 @@ We going to setup Prometheus, Alert Manager and Nginx in our example
 **Docker Compose Install in Ubuntu**
 Ref: https://docs.docker.com/engine/install/ubuntu/#set-up-the-repository
 
-### Prometheus up and running
+## Prometheus up and running
 
-####Command to start the docker compose
+#### Command to start the docker compose
 
 ![Docker Compose up](./images/Docker-Compose-Up.PNG)
 
