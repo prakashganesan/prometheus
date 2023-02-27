@@ -30,7 +30,7 @@ Ref: https://docs.docker.com/engine/install/ubuntu/#set-up-the-repository
 * Targets configured in Prometheus
 ![Prometheus-targets](./images/Prometheus-targets.PNG)
 
-* Nginx alert configuration info
+* Nginx alert config info
 ![Nginx-alert](./images/nginx-alert.PNG)
 
 * Nginx alert rules info
