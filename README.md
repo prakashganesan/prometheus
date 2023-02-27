@@ -1,9 +1,9 @@
-### Prometheus Setup 
+## Prometheus Setup 
 Prometheus, a [Cloud Native Computing Foundation](https://cncf.io/) project, is a systems and service monitoring system. It collects metrics
 from configured targets at given intervals, evaluates rule expressions,
 displays the results, and can trigger alerts when specified conditions are observed.
 
-## Architecture overview
+# Architecture overview
 
 ![Architecture overview](https://cdn.jsdelivr.net/gh/prometheus/prometheus@c34257d069c630685da35bcef084632ffd5d6209/documentation/images/architecture.svg)
 
@@ -19,21 +19,24 @@ We going to setup Prometheus, Alert Manager and Nginx in our example
 **Docker Compose Install in Ubuntu**
 Ref: https://docs.docker.com/engine/install/ubuntu/#set-up-the-repository
 
-    To start services in docker compose file ```sudo docker compose up```
-    To stop services in docker compose file ```sudo docker compose down```
+### Prometheus up and running
 
-# Prometheus up and running
-
+* Command to start the docker compose
 ![Docker Compose up](./images/Docker-Compose-Up.PNG)
 
+* Prometheus status 
 ![Prometheus](./images/Prometheus-up.PNG)
 
+* Targets configured in Prometheus
 ![Prometheus-targets](./images/Prometheus-targets.PNG)
 
-![Nginx-Alert](./images/nginx-alert.PNG)
+* Nginx alert configuration info
+![Nginx-alert](./images/nginx-alert.PNG)
 
-![Nginx-Alert-Rules](./images/nginx-alert-rules.PNG)
+* Nginx alert rules info
+![Nginx-alert-rules](./images/nginx-alert-rules.PNG)
 
+* Available nginx plugins to pull the metrics from the nginx
 ![Nginx-metrics](./images/nginx-metrics.PNG)
 
 Let's stop the nginx container and will check the alert status
