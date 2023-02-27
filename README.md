@@ -1,10 +1,4 @@
-<h1 align="center" style="border-bottom: none">
-    <a href="//prometheus.io" target="_blank"><img alt="Prometheus" src="/documentation/images/prometheus-logo.svg"></a><br>Prometheus
-</h1>
-
-<p align="center">Visit <a href="//prometheus.io" target="_blank">prometheus.io</a> for the full documentation,
-examples and guides.</p>
-
+### Prometheus Setup 
 Prometheus, a [Cloud Native Computing Foundation](https://cncf.io/) project, is a systems and service monitoring system. It collects metrics
 from configured targets at given intervals, evaluates rule expressions,
 displays the results, and can trigger alerts when specified conditions are observed.
