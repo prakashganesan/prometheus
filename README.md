@@ -9,8 +9,6 @@ displays the results, and can trigger alerts when specified conditions are obser
 
 ## Install
 
-There are various ways of installing Prometheus, we can use Docker Compose in our example to setup the prometheus environment.
-
 We going to setup Prometheus, Alert Manager and Nginx in our example
 
 * ```docker-compose.yml``` Docker compose file configured with required container's setup to run in our local machine
@@ -18,6 +16,15 @@ We going to setup Prometheus, Alert Manager and Nginx in our example
 * ```nginx.conf``` configuration file configured with ```stub_status``` to provide the metrics to ```nginx node exporter```
 * ```nginx_alert_rules.yml``` configuration file has the alert rules to trigger when nginx container goes down.
 
+## How to run docker compose file
 
+# Setup Docker in local machine 
 
+![Docker Compose Install in Ubuntu](https://docs.docker.com/engine/install/ubuntu/#set-up-the-repository)
 
+    To start services in docker compose file ```sudo docker compose up```
+    To stop services in docker compose file ```sudo docker compose down```
+
+# Docker Compose up
+
+![Docker Compose up](./images/Docker-Compose-Up.PNG)
